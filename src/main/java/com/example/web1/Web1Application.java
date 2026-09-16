@@ -19,8 +19,8 @@ public class Web1Application {
 	public String hello() {
 		return "Hello, World!";
 	}
-	@GetMapping ("/student/{id}")
+	@GetMapping("/student/{id}")
 	public String getStudent(@PathVariable String id) {
-		return "Sinh viên có mã: " + id;
+		return "Student ID: " + id;
 	}
 }
